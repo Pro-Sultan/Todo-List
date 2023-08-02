@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+body{
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 450px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+  }
+  .header h1, .task h1 {
+    color: #191919;
+    font-family: "Anton", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+  }
+
+  .header img, .task img{
+    width: 55px;
+  }
+  .rem{
+    width: 40px;
+  
+  }
+
+  .img {
+    width: 100%;
+    margin-top: 100px;
+    height: 450px;
+    padding: 0px 10px 0px 0px;
+    border-radius: 80px;
+  }
+
+  .form{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 5px 10px;
+    height: 420px;
+    background-color: white;
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.5s ease-in-out, 
+    height 0.5s ease-in-out;
+    border-top-left-radius: 35px;
+     border-top-right-radius: 35px;
+  }
+
+  div.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  form input{
+    width: 93%;
+    padding: 20px 10px;
+    background-color: #f2f2f7;
+    border: none;
+    outline: none;
+    margin: 10px 0px;
+    font-size: 25px;
+    
+  }
+   form input:focus{
+    border: 4px solid black;
+   }
+
+  form p{
+    font-size: 30px;
+  }
+
+    .sub{
+        width: 97%;
+        margin-top: 40px;
+        outline: none;
+        border: none;
+        padding: 15px 0px;
+        font-size: 25px;
+        border-radius: 10px;
+        background-color: #af52de;
+        color: white;
+    }
+    .note{
+        margin-top: 20px;
+        padding: 20px 10px;
+        border-radius: 10px;
+        z-index: 1;
+        background-color: #f2f2f7;
+    }
+
+    .note h2{
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .note p{
+      font-size: 20px;
+    }
+    .rem{
+      padding: 10px 10px;
+      border-radius: 5px;
+      float: right;
+      border-radius: 50%;
+      z-index: 10;
+      margin-top: -10px;
+      position: relative;
+    }
+
+    
+
+
+
+}
