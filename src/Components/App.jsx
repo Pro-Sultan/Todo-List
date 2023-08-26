@@ -5,7 +5,6 @@ import Form from "./Form";
 import Note from "./Note";
 
 function App() {
-
   const [isClick, setClick] = useState(false)
 
   const [item, setItem] = useState([])
@@ -13,14 +12,12 @@ function App() {
   function showTask() {
     setClick(true)
   }
-
   function closeTask() {
     setClick(preview => {
       return !preview
     })
   }
-
-  function addnote(note) {
+  function addnote(note, date) {
     setItem(prevValue => {
       return [
         ...prevValue,
@@ -31,11 +28,8 @@ function App() {
   }
 
   function deleteItem(id) {
-    setItem(prevValue => {
-      return prevValue.filter((item, index) => {
-        return id !== index;
-      })
-    })
+    setItem(prevValue => prevValue.filter((item, index) => id !== index)
+    )
   }
   return (
     <>

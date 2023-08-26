@@ -24,7 +24,7 @@ const Form = (props) => {
   }
 
   function handleSubmit(e) {
-    props.onadd(text)
+    props.onadd(text, date)
     setText({
       title: "",
       descrip: ""

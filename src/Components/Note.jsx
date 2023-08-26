@@ -2,12 +2,14 @@ import React from 'react'
 import closebutton from '../assets/closebutton.png'
 
 const Note = (props) => {
+
     return (
             <div className='note' >
                 <h2>{props.text}</h2>
+               
 
                 <p>{props.descrip}</p>
-
+                
               <img src={closebutton} alt="" className='rem' onClick={() =>{
                 props.delete(props.id)
               }}/>
